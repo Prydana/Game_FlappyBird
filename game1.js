@@ -42,7 +42,7 @@ class Main extends Phaser.Scene {
 
     this.timedEvent = this.time.addEvent({
       delay: 1500,
-      callback: this.addRowOfPipes, //Цю функцію реалізуємо на наступному кроці
+      callback: this.addRowOfPipes,
       callbackScope: this,
       loop: true,
     });
@@ -113,7 +113,7 @@ const config = {
   type: Phaser.AUTO,
   width: 800,
   height: 490,
-  scene: Main, // Цю сцену ми створимо на 4-му кроці
+  scene: Main,
   backgroundColor: "#71c5cf",
   physics: {
     default: "arcade",
